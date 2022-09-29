@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+}
+.wrapper{
+    height: 100px;
+    margin-bottom: 50px;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 15px;
+}
+/* header */
+.header {
+    width: 100%;
+    padding-top: 50px;
+}
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+}
+.header__burger{
+    display: none;
+}
+
+
+.header__menu{
+
+}
+
+@media (max-width: 767px) {
+    .container{
+        max-width: 576px;
+    }
+    .grid-item{
+        margin: 10px auto;
+    }
+    .square{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .header__burger{
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+    }
+    .header__burger:before{
+
+    }
+    .header__burger:after{
+
+    }
+
+
+}
+.header__list{
+    list-style-type: none;
+    display: flex;
+}
+
+.header__link {
+    color: black;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+/* main */
+.grid-container {
+    display:  flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.grid-item {
+    margin: 10px 30px;
+    background-color: gray;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    width: 180px;
+    height: 180px;
+}
+
+
+/* box */
+.boxes{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.square{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.box{
+    width: 300px;
+    height: 250px;
+    background-color: gray;
+}
+/*  footer */
+.footer {
+    height: 60px;
+    background-color: gray;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+
+
+
+@media (max-width: 1200px) {
+    .container{
+        max-width: 970px;
+        margin: 10px auto;
+    }
+    .grid-item{
+        margin: 10px auto;
+    }
+
+
+}
+@media (max-width: 992px) {
+    .container{
+        max-width: 750px;
+    }
+    .grid-item{
+        margin: 10px auto;
+    }
+    .square{
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    .box{
+        margin: 10px auto;
+
+}
+
+}
+
+@media (max-width: 576px) {
+    .container{
+        max-width: none;
+        margin: 0 auto;
+    }
+    .grid-item{
+        margin: 10px auto;
+    }
+    .square{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .box{
+        margin: 10px auto;
+    }
+}
+
